@@ -1,3 +1,98 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+/* ---------- daisyUI theme (buttons, cards, backgrounds, radii) ---------- */
+@plugin "daisyui/theme" {
+  name: "proverb";
+  default: true;
+  prefersdark: false;
+  color-scheme: light;
+
+  /* Backgrounds, text, borders */
+  --color-base-100: #ffffff;      /* your "surface": cards, navbar */
+  --color-base-200: #f2f8fb;      /* your old "primary": page background */
+  --color-base-300: #e5e7eb;      /* your "border" */
+  --color-base-content: #374151;  /* your "body" text */
+
+  /* Brand */
+  --color-primary: #2563EB;       /* blue button from the design (estimate) */
+  --color-primary-content: #ffffff;
+  --color-secondary: #1e0b5c;     /* deep indigo CTA band (estimate) */
+  --color-secondary-content: #ffffff;
+  --color-accent: #38a0e0;        /* sky-blue heading highlights (estimate) */
+  --color-accent-content: #ffffff;
+  --color-neutral: #111827;
+  --color-neutral-content: #f9fafb;
+
+  /* Status */
+  --color-success: #15803d;
+  --color-success-content: #ffffff;
+  --color-error: #b91c1c;
+  --color-error-content: #ffffff;
+  --color-warning: #a16207;
+  --color-warning-content: #ffffff;
+  --color-info: #1d4ed8;
+  --color-info-content: #ffffff;
+
+  /* Rounded corners */
+  --radius-selector: 0.5rem;   /* badges, checkboxes, toggles */
+  --radius-field: 0.5rem;      /* buttons, inputs */
+  --radius-box: 0.75rem;       /* cards, dropdowns, modals */
+
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+/* ---------- Extra tokens (become Tailwind classes) ---------- */
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+}
+
+@theme {
+  /* Your existing extras */
+  --color-surface: #F2F8FB;
+  --color-heading: #111827;   /* text-heading */
+  --color-body: #374151;      /* text-body */
+  --color-muted: #6b7280;     /* text-muted */
+  --color-border: #e5e7eb;    /* border-border */
+
+  /* Your old light/warm colors, kept as extras */
+  --color-soft: #f9f9f9;      /* was secondary */
+  --color-warm: #f8f5f2;      /* was neutral */
+  --color-brand-orange: #f87d4a; /* was accent */
+
+  /* Extra brand colors from the design */
+  --color-brand-navy: #1e3a8a;
+  --color-brand-gold: #b8975f;
+
+  /* Custom radii and shadows */
+  --radius-card: 0.75rem;
+  --radius-image: 1.5rem;
+  --shadow-card: 0 4px 20px rgb(15 23 42 / 0.06);
+  --shadow-card-hover: 0 12px 30px rgb(37 99 235 / 0.18);
+}
+
+/* ---------- Utilities ---------- */
+@utility bg-hero-gradient {
+  background-image: linear-gradient(
+    135deg,
+    color-mix(in oklab, var(--color-accent) 25%, white) 0%,
+    var(--color-base-100) 70%
+  );
+}
+@utility bg-faq-gradient {
+  background-image: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+}
+@utility section-container {
+  @apply mx-auto max-w-6xl px-4 md:px-10;
+}
+
+/* ---------- Base ---------- */
+@layer base {
+  body { @apply bg-base-200 text-base-content font-sans; }
+  h1, h2, h3, h4, h5, h6 { @apply font-heading text-heading; }
+}
