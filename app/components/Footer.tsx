@@ -16,6 +16,14 @@ export default function Footer() {
     <a className="link link-hover">Digital Marketing</a>
     <a className="link link-hover">Custom Software</a>
   </nav>
+    <nav>
+    <h6 className="footer-title">Links</h6>
+    <a className="link link-hover">Web Design</a>
+    <a className="link link-hover">App Development</a>
+    <a className="link link-hover">Billing Software</a>
+    <a className="link link-hover">Digital Marketing</a>
+    <a className="link link-hover">Custom Software</a>
+  </nav>
   <nav>
     <h6 className="footer-title">Technology</h6>
     <a className="link link-hover"></a>

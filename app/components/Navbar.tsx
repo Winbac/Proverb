@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Navbar() {
   return (
     <div className="lg:pt-5">
@@ -50,36 +52,51 @@ export default function Navbar() {
         <div className="navbar-center hidden lg:flex">
           <ul className="flex items-center gap-8 px-1 font-heading text-sm font-semibold ">
             <li>
-              <a className="group block py-2 text-body transition-colors hover:text-heading cursor-pointer">
+              <Link
+                href="/"
+                className="group block py-2 text-body transition-colors hover:text-heading cursor-pointer"
+              >
                 Home
                 <span className="mx-auto mt-0.5 block h-0.5 w-0 rounded-full bg-primary transition-all duration-300 group-hover:w-full" />
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a className="group block py-2 text-body transition-colors hover:text-heading cursor-pointer">
+              <Link
+                href="/about"
+                className="group block py-2 text-body transition-colors hover:text-heading cursor-pointer"
+              >
                 About Us
                 <span className="mx-auto mt-0.5 block h-0.5 w-0 rounded-full bg-primary transition-all duration-300 group-hover:w-full" />
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="group block py-2 text-body transition-colors hover:text-heading cursor-pointer">
+              <Link
+                href="/services"
+                className="group block py-2 text-body transition-colors hover:text-heading cursor-pointer"
+              >
                 Services
                 <span className="mx-auto mt-0.5 block h-0.5 w-0 rounded-full bg-primary transition-all duration-300 group-hover:w-full" />
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="group block py-2 text-body transition-colors hover:text-heading cursor-pointer">
+              <Link
+                href="/industries"
+                className="group block py-2 text-body transition-colors hover:text-heading cursor-pointer"
+              >
                 Industries We Serve
                 <span className="mx-auto mt-0.5 block h-0.5 w-0 rounded-full bg-primary transition-all duration-300 group-hover:w-full" />
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a className="group block py-2 text-body transition-colors hover:text-heading cursor-pointer">Contact Us
-                                <span className="mx-auto mt-0.5 block h-0.5 w-0 rounded-full bg-primary transition-all duration-300 group-hover:w-full" />
-
-              </a>
+              <Link
+                href="/contact"
+                className="group block py-2 text-body transition-colors hover:text-heading cursor-pointer"
+              >
+                Contact Us
+                <span className="mx-auto mt-0.5 block h-0.5 w-0 rounded-full bg-primary transition-all duration-300 group-hover:w-full" />
+              </Link>
             </li>
           </ul>
         </div>
