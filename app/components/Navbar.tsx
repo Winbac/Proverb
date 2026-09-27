@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <div className="lg:pt-5">
-      <div className="navbar shadow-sm px-10 bg-white lg:rounded-4xl lg:w-11/12 lg:mx-auto ">
+      <div className="navbar shadow-sm px-4 bg-white lg:rounded-4xl lg:w-11/12 lg:mx-auto ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -47,7 +47,7 @@ export default function Navbar() {
             </ul>
           </div>
 
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          {/* <a className="btn btn-ghost text-xl">daisyUI</a> */}
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="flex items-center gap-8 px-1 font-heading text-sm font-semibold ">

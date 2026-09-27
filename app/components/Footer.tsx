@@ -1,15 +1,44 @@
+import { FaFacebookF,FaLinkedinIn,FaXTwitter} from "react-icons/fa6";
+
 export default function Footer() {
     return (
-        <footer className="footer sm:footer-horizontal bg-base-300 text-base-content p-10">
-            <nav>
-<img src='/footer-logo.png' alt='footer-logo' />
-    <a className="link link-hover">Web Design</a>
-    <a className="link link-hover">App Development</a>
-    <a className="link link-hover">Billing Software</a>
- 
-  </nav>
+        <footer className="footer sm:footer-horizontal bg-base-300 text-[20px]e-content p-10">
+<nav className="flex flex-col items-center gap-8">
+  <img
+    src="/footer-logo.png"
+    alt="Proverb Technologies"
+    className="h-auto w-72"
+  />
+
+  <div className="flex items-center justify-center gap-8">
+    {/* Replace these URLs with your social profile links */}
+    <a
+      href="https://www.facebook.com/"
+      aria-label="Facebook"
+      className="text-[#0866FF] transition-opacity hover:opacity-70"
+    >
+      <FaFacebookF size={26} />
+    </a>
+
+    <a
+      href="https://www.linkedin.com/"
+      aria-label="LinkedIn"
+      className="text-[#0A66C2] transition-opacity hover:opacity-70"
+    >
+      <FaLinkedinIn size={30} />
+    </a>
+
+    <a
+      href="https://x.com/"
+      aria-label="X"
+      className="text-black transition-opacity hover:opacity-70"
+    >
+      <FaXTwitter size={26} />
+    </a>
+  </div>
+</nav>
   <nav>
-    <h6 className="footer-title">Services</h6>
+    <h6 className="font-heading font-bold text-[20px]">Services</h6>
     <a className="link link-hover">Web Design</a>
     <a className="link link-hover">App Development</a>
     <a className="link link-hover">Billing Software</a>
@@ -17,7 +46,7 @@ export default function Footer() {
     <a className="link link-hover">Custom Software</a>
   </nav>
     <nav>
-    <h6 className="footer-title">Links</h6>
+    <h6 className="font-heading font-bold text-[20px]">Links</h6>
     <a className="link link-hover">Web Design</a>
     <a className="link link-hover">App Development</a>
     <a className="link link-hover">Billing Software</a>
@@ -25,51 +54,20 @@ export default function Footer() {
     <a className="link link-hover">Custom Software</a>
   </nav>
   <nav>
-    <h6 className="footer-title">Technology</h6>
-    <a className="link link-hover"></a>
-    <a className="link link-hover">Contact</a>
-    <a className="link link-hover">Jobs</a>
-    <a className="link link-hover">Press kit</a>
+    <h6 className="font-heading font-bold text-[20px]">Technology</h6>
+    <a className="link link-hover">Next.js</a>
+    <a className="link link-hover">React.js</a>
+    <a className="link link-hover">Node.js</a>
+    <a className="link link-hover">Native.js</a>
+        <a className="link link-hover">SQL</a>
+           
+
   </nav>
   <nav>
-    <h6 className="footer-title">Social</h6>
+    <h6 className="font-heading font-bold text-[20px]">Contact Us</h6>
     <div className="grid grid-flow-col gap-4">
-      <a>
-        <svg
-          aria-label="Twitter"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          className="fill-current">
-          <path
-            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-        </svg>
-      </a>
-      <a>
-        <svg
-          aria-label="YouTube"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          className="fill-current">
-          <path
-            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-        </svg>
-      </a>
-      <a>
-        <svg
-          aria-label="Facebook"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          className="fill-current">
-          <path
-            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
-        </svg>
-      </a>
+   <p>Suite 104, 11th Floor, <br /> SkyMarkOne, Noida UP 
+201301</p>
     </div>
   </nav>
 </footer>

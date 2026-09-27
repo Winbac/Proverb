@@ -74,6 +74,8 @@
   --radius-image: 1.5rem;
   --shadow-card: 0 4px 20px rgb(15 23 42 / 0.06);
   --shadow-card-hover: 0 12px 30px rgb(37 99 235 / 0.18);
+   --color-footer: #1E293B;
+  --color-footer-content: #cbd5e1; /* light slate for text on dark bg */
 }
 
 /* ---------- Utilities ---------- */
