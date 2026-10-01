@@ -47,7 +47,7 @@ export default function Navbar() {
             </ul>
           </div>
 
-          {/* <a className="btn btn-ghost text-xl">daisyUI</a> */}
+          { <a className="btn btn-ghost text-xl">daisyUI</a> }
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="flex items-center gap-8 px-1 font-heading text-sm font-semibold ">

@@ -98,3 +98,6 @@
   body { @apply bg-base-200 text-base-content font-sans; }
   h1, h2, h3, h4, h5, h6 { @apply font-heading text-heading; }
 }
+.footer .link {
+  @apply font-heading font-medium text-[#64748B] text-[16px];
+}
