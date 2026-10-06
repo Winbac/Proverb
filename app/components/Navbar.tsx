@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className="lg:pt-5">
+    <div className=" relative z-50 lg:pt-5">
       <div className="navbar shadow-sm px-4 bg-white lg:rounded-4xl lg:w-11/12 lg:mx-auto ">
         <div className="navbar-start">
           <div className="dropdown">
