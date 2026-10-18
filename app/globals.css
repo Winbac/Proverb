@@ -101,3 +101,77 @@
 .footer .link {
   @apply font-heading font-medium text-[#64748B] text-[16px];
 }
+/* Notch size + inner corner radius */
+.notch {
+  --nw: 38%;   /* notch width  */
+  --nh: 16%;   /* notch height */
+  --r: 22px;   /* rounded corner of the notch */
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+/* Visible = right strip + bottom strip + the small fillet piece */
+.notch-tl {
+  -webkit-mask-image:
+    linear-gradient(#000, #000),
+    linear-gradient(#000, #000),
+    radial-gradient(circle at top left, transparent var(--r), #000 calc(var(--r) + 0.5px));
+  mask-image:
+    linear-gradient(#000, #000),
+    linear-gradient(#000, #000),
+    radial-gradient(circle at top left, transparent var(--r), #000 calc(var(--r) + 0.5px));
+  -webkit-mask-size: calc(100% - var(--nw)) 100%, 100% calc(100% - var(--nh)), var(--r) var(--r);
+  mask-size: calc(100% - var(--nw)) 100%, 100% calc(100% - var(--nh)), var(--r) var(--r);
+  -webkit-mask-position: right top, left bottom, calc(var(--nw) - var(--r)) calc(var(--nh) - var(--r));
+  mask-position: right top, left bottom, calc(var(--nw) - var(--r)) calc(var(--nh) - var(--r));
+}
+
+.notch-tr {
+  -webkit-mask-image:
+    linear-gradient(#000, #000),
+    linear-gradient(#000, #000),
+    radial-gradient(circle at top right, transparent var(--r), #000 calc(var(--r) + 0.5px));
+  mask-image:
+    linear-gradient(#000, #000),
+    linear-gradient(#000, #000),
+    radial-gradient(circle at top right, transparent var(--r), #000 calc(var(--r) + 0.5px));
+  -webkit-mask-size: calc(100% - var(--nw)) 100%, 100% calc(100% - var(--nh)), var(--r) var(--r);
+  mask-size: calc(100% - var(--nw)) 100%, 100% calc(100% - var(--nh)), var(--r) var(--r);
+  -webkit-mask-position: left top, left bottom, calc(100% - var(--nw) + var(--r) - var(--r)) calc(var(--nh) - var(--r));
+  mask-position: left top, left bottom, calc(100% - var(--nw)) calc(var(--nh) - var(--r));
+}
+
+.notch-bl {
+  -webkit-mask-image:
+    linear-gradient(#000, #000),
+    linear-gradient(#000, #000),
+    radial-gradient(circle at bottom left, transparent var(--r), #000 calc(var(--r) + 0.5px));
+  mask-image:
+    linear-gradient(#000, #000),
+    linear-gradient(#000, #000),
+    radial-gradient(circle at bottom left, transparent var(--r), #000 calc(var(--r) + 0.5px));
+  -webkit-mask-size: calc(100% - var(--nw)) 100%, 100% calc(100% - var(--nh)), var(--r) var(--r);
+  mask-size: calc(100% - var(--nw)) 100%, 100% calc(100% - var(--nh)), var(--r) var(--r);
+  -webkit-mask-position: right top, left top, calc(var(--nw) - var(--r)) calc(100% - var(--nh));
+  mask-position: right top, left top, calc(var(--nw) - var(--r)) calc(100% - var(--nh));
+}
+
+.notch-br {
+  -webkit-mask-image:
+    linear-gradient(#000, #000),
+    linear-gradient(#000, #000),
+    radial-gradient(circle at bottom right, transparent var(--r), #000 calc(var(--r) + 0.5px));
+  mask-image:
+    linear-gradient(#000, #000),
+    linear-gradient(#000, #000),
+    radial-gradient(circle at bottom right, transparent var(--r), #000 calc(var(--r) + 0.5px));
+  -webkit-mask-size: calc(100% - var(--nw)) 100%, 100% calc(100% - var(--nh)), var(--r) var(--r);
+  mask-size: calc(100% - var(--nw)) 100%, 100% calc(100% - var(--nh)), var(--r) var(--r);
+  -webkit-mask-position: left top, left top, calc(100% - var(--nw)) calc(100% - var(--nh));
+  mask-position: left top, left top, calc(100% - var(--nw)) calc(100% - var(--nh));
+}
+
+/* On mobile, drop the notch and show plain rounded images */
+@media (max-width: 639px) {
+  .notch { -webkit-mask-image: none; mask-image: none; }
+}

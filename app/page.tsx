@@ -13,125 +13,87 @@ import { FaCode } from "react-icons/fa6";
 import { FaCircleCheck } from "react-icons/fa6";
 
 const services = [
-
   {
-
     title: "SEO / SEM",
 
     icon: IoMdSearch,
 
     description:
-
       "Lorem ipsum dolor sit amet consectetur. Est imperdiet integer venenatis praesent adipiscing non. Risus nisl a velit tellus quis sed lectus turpis nibh.",
-
   },
 
   {
-
     title: "Content Marketing",
 
     icon: PiNotepad,
 
     description:
-
       "Lorem ipsum dolor sit amet consectetur. Est imperdiet integer venenatis praesent adipiscing non. Risus nisl a velit tellus quis sed lectus turpis nibh.",
-
   },
 
   {
-
     title: "Meta Ads",
 
     icon: HiOutlineSpeakerphone,
 
     description:
-
       "Lorem ipsum dolor sit amet consectetur. Est imperdiet integer venenatis praesent adipiscing non. Risus nisl a velit tellus quis sed lectus turpis nibh.",
-
   },
 
   {
-
     title: "Custom Design",
 
     icon: FaCode,
 
     description:
-
       "Lorem ipsum dolor sit amet consectetur. Est imperdiet integer venenatis praesent adipiscing non. Risus nisl a velit tellus quis sed lectus turpis nibh.",
-
   },
-
 ];
 
 const benefits = [
-
   {
-
     title: "Lorem Ipsum Doloe Set",
 
     description:
-
       "Lorem ipsum dolor sit amet consectetur. Amet facilisi a pretium scelerisque nunc donec nisl. Sed praesent facilisis fringilla porttitor. Egestas turpis diam erat non hac consectetur pretium.",
-
   },
 
   {
-
     title: "Lorem Ipsum Doloe Set",
 
     description:
-
       "Lorem ipsum dolor sit amet consectetur. Amet facilisi a pretium scelerisque nunc donec nisl. Sed praesent facilisis fringilla porttitor. Egestas turpis diam erat non hac consectetur pretium.",
-
   },
 
   {
-
     title: "Lorem Ipsum Doloe Set",
 
     description:
-
       "Lorem ipsum dolor sit amet consectetur. Amet facilisi a pretium scelerisque nunc donec nisl. Sed praesent facilisis fringilla porttitor. Egestas turpis diam erat non hac consectetur pretium.",
-
   },
-
 ];
 
 export default function Page() {
-
   return (
-
     <main className="min-h-screen bg-[#F2F8FB] text-[#1F2937]">
-
       {/* BACKGROUND */}
 
       <div
-
         aria-hidden="true"
-
         className="pointer-events-none absolute inset-0 z-0 overflow-hidden"
-
       >
-
         {/* Dotted background */}
 
         <div
-
           className="absolute inset-0 bg-cover bg-top bg-no-repeat"
-
           style={{
-
             backgroundImage: "url('/dotted1.png')",
-
           }}
-
         />
 
         {/* Blue blurred circle above the dotted image */}
 
         <div
-
           className="absolute -left-[180px] top-0
 
                        h-[650px] w-[950px]
@@ -139,17 +101,13 @@ export default function Page() {
                        rounded-full bg-[#8EC5E0]
 
                        opacity-60 blur-[100px]"
-
         />
-
       </div>
 
       {/* HERO SECTION */}
 
       <section className="relative isolate overflow-hidden">
-
         <div
-
           className="
 
             relative z-10 mx-auto grid w-full max-w-[1500px]
@@ -173,15 +131,11 @@ export default function Page() {
             lg:py-24
 
           "
-
         >
-
           {/* LEFT: TEXT */}
 
           <div>
-
             <h1
-
               className="
 
                 font-sans
@@ -197,19 +151,13 @@ export default function Page() {
                 lg:text-[52px]
 
               "
-
             >
-
               Lorem ipsum dolor sit amet consectetur.{" "}
-
               <span className="font-bold text-[#38BDF8]">Ultrices etiam</span>{" "}
-
               sit ac urna viverra.
-
             </h1>
 
             <p
-
               className="
 
                 mt-6
@@ -223,23 +171,15 @@ export default function Page() {
                 text-gray-500
 
               "
-
             >
-
               Lorem ipsum dolor sit amet consectetur. Quisque convallis
-
               consectetur sit sit. Mauris ac consectetur maecenas elementum
-
               habitant nisl. Sed enim diam sit sit.
-
             </p>
 
             <div className="mt-7 flex flex-wrap gap-4">
-
               <Link
-
                 href="/contact"
-
                 className="
 
                   rounded-xl
@@ -259,17 +199,12 @@ export default function Page() {
                   hover:bg-blue-700
 
                 "
-
               >
-
                 Free Consultation
-
               </Link>
 
               <Link
-
                 href="#services"
-
                 className="
 
                   rounded-xl
@@ -289,27 +224,18 @@ export default function Page() {
                   hover:bg-gray-600
 
                 "
-
               >
-
                 View Services
-
               </Link>
-
             </div>
-
           </div>
 
           {/* RIGHT: PHOTO */}
 
           <div className="relative mx-auto w-full max-w-[552px] lg:ml-auto lg:mr-0">
-
             <img
-
               src="/afrowomen.png"
-
               alt="Business professional holding a tablet"
-
               className="
 
                 block
@@ -323,13 +249,11 @@ export default function Page() {
                 object-cover
 
               "
-
             />
 
             {/* FLOATING CONVERSION CARD */}
 
             <div
-
               className="
 
                 absolute
@@ -359,21 +283,15 @@ export default function Page() {
                 lg:left-[-88px]
 
               "
-
             >
-
               <p className="text-xs font-bold text-[#123477] sm:text-sm">
-
                 Today&apos;s Conversion
-
               </p>
 
               <div className="mt-4 flex items-center gap-2">
-
                 <span className="text-base font-bold text-black">10,150</span>
 
                 <span
-
                   className="
 
                     rounded-full
@@ -389,21 +307,15 @@ export default function Page() {
                     text-black
 
                   "
-
                 >
-
                   +6.2%
-
                 </span>
-
               </div>
 
               {/* Progress bar */}
 
               <div
-
                 aria-hidden="true"
-
                 className="
 
                   mt-2
@@ -419,21 +331,15 @@ export default function Page() {
                   bg-gray-300
 
                 "
-
               >
-
                 <div className="h-full w-[65%] rounded-full bg-[#123477]" />
-
               </div>
 
               {/* Location */}
 
               <div className="mt-4 flex items-start gap-2">
-
                 <span
-
                   aria-hidden="true"
-
                   className="
 
                     mt-1.5
@@ -447,33 +353,21 @@ export default function Page() {
                     bg-blue-500
 
                   "
-
                 />
 
                 <div>
-
                   <p className="text-xs text-gray-700 sm:text-sm">
-
                     Lajpat Nagar
-
                   </p>
 
                   <p className="text-xs font-bold text-[#123477] sm:text-sm">
-
                     1,035 Visitors
-
                   </p>
-
                 </div>
-
               </div>
-
             </div>
-
           </div>
-
         </div>
-
       </section>
 
       {/* =========================================================
@@ -483,14 +377,12 @@ export default function Page() {
       ========================================================= */}
 
       <section
-  id="services"
-  className="w-full scroll-mt-8 px-6 py-14 md:px-10 lg:px-16 lg:py-16"
->
-  <div className="mx-auto w-full max-w-[1500px]">
-
-        <h2
-
-          className="
+        id="services"
+        className="w-full scroll-mt-8 px-6 py-14 md:px-10 lg:px-16 lg:py-16"
+      >
+        <div className="mx-auto w-full max-w-[1500px]">
+          <h2
+            className="
 
             mb-10
 
@@ -503,26 +395,18 @@ export default function Page() {
             font-bold
 
           "
+          >
+            We Provide The Best <span className="text-[#60A5FA]">Services</span>
+          </h2>
 
-        >
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {services.map((service) => {
+              const Icon = service.icon;
 
-          We Provide The Best <span className="text-[#60A5FA]">Services</span>
-
-        </h2>
-
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-
-          {services.map((service) => {
-
-            const Icon = service.icon;
-
-            return (
-
-              <article
-
-                key={service.title}
-
-                className="
+              return (
+                <article
+                  key={service.title}
+                  className="
 
                   relative
 
@@ -547,14 +431,11 @@ export default function Page() {
                   shadow-[3px_6px_5px_rgba(0,0,0,0.18)]
 
                 "
+                >
+                  {/* Icon */}
 
-              >
-
-                {/* Icon */}
-
-                <div
-
-                  className="
+                  <div
+                    className="
 
                     absolute
 
@@ -573,26 +454,22 @@ export default function Page() {
                     bg-[#60A5FA]
 
                   "
+                  >
+                    <Icon
+                      aria-hidden="true"
+                      className="text-[25px] text-white"
+                    />
+                  </div>
 
-                >
+                  <h3 className="mb-2 text-base font-bold">{service.title}</h3>
 
-                  <Icon aria-hidden="true" className="text-[25px] text-white" />
+                  <p className="text-[13px] leading-5 text-gray-500">
+                    {service.description}
+                  </p>
 
-                </div>
-
-                <h3 className="mb-2 text-base font-bold">{service.title}</h3>
-
-                <p className="text-[13px] leading-5 text-gray-500">
-
-                  {service.description}
-
-                </p>
-
-                <Link
-
-                  href="/services"
-
-                  className="
+                  <Link
+                    href="/services"
+                    className="
 
                     mt-auto
 
@@ -605,25 +482,16 @@ export default function Page() {
                     hover:text-blue-600
 
                   "
-
-                >
-
-                  Read More...
-
-                  <span className="sr-only">about {service.title}</span>
-
-                </Link>
-
-              </article>
-
-            );
-
-          })}
-
+                  >
+                    Read More...
+                    <span className="sr-only">about {service.title}</span>
+                  </Link>
+                </article>
+              );
+            })}
+          </div>
         </div>
-
-        </div>
-</section>
+      </section>
 
       {/* =========================================================
 
@@ -632,14 +500,12 @@ export default function Page() {
       ========================================================= */}
 
       <section
-  id="why-us"
-  className="w-full scroll-mt-8 px-6 py-14 md:px-10 lg:px-16 lg:py-16"
->
-  <div className="mx-auto w-full max-w-[1500px]">
-
-        <div
-
-          className="
+        id="why-us"
+        className="w-full scroll-mt-8 px-6 py-14 md:px-10 lg:px-16 lg:py-16"
+      >
+        <div className="mx-auto w-full max-w-[1500px]">
+          <div
+            className="
 
             relative
 
@@ -658,14 +524,11 @@ export default function Page() {
             lg:py-12
 
           "
+          >
+            {/* HEADING */}
 
-        >
-
-          {/* HEADING */}
-
-          <h2
-
-            className="
+            <h2
+              className="
 
              text-center
 
@@ -680,54 +543,26 @@ export default function Page() {
               lg:text-[32px]
 
             "
+            >
+              Why To <span className="text-[#38BDF8]">Work</span> With Us
+            </h2>
 
-          >
+            {/* CONTENT */}
 
-            Why To <span className="text-[#38BDF8]">Work</span> With Us
+            <div className="grid items-center gap-8 lg:grid-cols-2">
+              {/* LEFT - BENEFITS */}
 
-          </h2>
+              <div className="space-y-12 mt-10">
+                {benefits.map((benefit, index) => {
+                  return (
+                    <div key={index} className="flex items-start gap-2 mb-6">
+                      {/* CHECK ICON */}
 
-          {/* CONTENT */}
+                      {/* TEXT */}
 
-          <div className="grid items-center gap-8 lg:grid-cols-2">
-
-            {/* LEFT - BENEFITS */}
-
-            <div className="space-y-12 mt-10">
-
-              {benefits.map((benefit, index) => {
-
-                return (
-
-                  <div key={index} className="flex items-start gap-2 mb-6">
-
-                    {/* CHECK ICON */}
-
-                    <FaCircleCheck
-
-                      className="
-
-                        mt-[3px]
-
-                        shrink-0
-
-                        text-[14px]
-
-                        text-[#60A5FA]
-
-                      "
-
-                      aria-hidden="true"
-
-                    />
-
-                    {/* TEXT */}
-
-                    <div>
-
-                      <h3
-
-                        className="
+                      <div>
+                        <h3
+                          className="
 
                           font-inter
 
@@ -740,16 +575,12 @@ export default function Page() {
                           text-[#374151]
 
                         "
+                        >
+                          {benefit.title}
+                        </h3>
 
-                      >
-
-                        {benefit.title}
-
-                      </h3>
-
-                      <p
-
-                        className="
+                        <p
+                          className="
 
                           mt-2
 
@@ -764,28 +595,19 @@ export default function Page() {
                           text-[#8491A5]
 
                         "
-
-                      >
-
-                        {benefit.description}
-
-                      </p>
-
+                        >
+                          {benefit.description}
+                        </p>
+                      </div>
                     </div>
+                  );
+                })}
+              </div>
 
-                  </div>
+              {/* RIGHT - IMAGE */}
 
-                );
-
-              })}
-
-            </div>
-
-            {/* RIGHT - IMAGE */}
-
-            <div
-
-              className="
+              <div
+                className="
 
                 relative
 
@@ -796,18 +618,13 @@ export default function Page() {
                 justify-center
 
               "
+              >
+                {/* LADY */}
 
-            >
-
-              {/* LADY */}
-
-              <img
-
-                src="/ladyfinal1.png"
-
-                alt="Business woman holding a tablet"
-
-                className="
+                <img
+                  src="/ladyfinal1.png"
+                  alt="Business woman holding a tablet"
+                  className="
 
                   relative
 
@@ -822,16 +639,13 @@ export default function Page() {
                   lg:h-[320px]
 
                 "
+                />
 
-              />
+                {/* ARROW */}
 
-              {/* ARROW */}
-
-              <div
-
-                aria-hidden="true"
-
-                className="
+                <div
+                  aria-hidden="true"
+                  className="
 
                   absolute
 
@@ -846,20 +660,15 @@ export default function Page() {
                   lg:block
 
                 "
+                >
+                  <img src="/line1.png" alt="" />
+                </div>
 
-              >
+                {/* LARGE SPARKLE */}
 
-                <img src="/line1.png" alt="" />
-
-              </div>
-
-              {/* LARGE SPARKLE */}
-
-              <div
-
-                aria-hidden="true"
-
-                className="
+                <div
+                  aria-hidden="true"
+                  className="
 
                   absolute
 
@@ -870,20 +679,15 @@ export default function Page() {
                   z-20
 
                 "
+                >
+                  <img src="/stars2.png" alt="" />
+                </div>
 
-              >
+                {/* SMALL SPARKLE */}
 
-                <img src="/stars2.png" alt="" />
-
-              </div>
-
-              {/* SMALL SPARKLE */}
-
-              <div
-
-                aria-hidden="true"
-
-                className="
+                <div
+                  aria-hidden="true"
+                  className="
 
                   absolute
 
@@ -898,178 +702,129 @@ export default function Page() {
                   text-[#E0EBFF]
 
                 "
-
-              >
-
-                ✦
-
+                >
+                  ✦
+                </div>
               </div>
-
             </div>
-
           </div>
-
         </div>
-
-        </div>
-</section>
+      </section>
 
       {/* =========================================================FAQ SECTION
 
 ========================================================= */}
 
-    <section
-
-  id="faq"
-
-  className="w-full px-6 py-14 md:px-10 lg:px-16 lg:py-16"
-
->
-
-    <div className="mx-auto w-full max-w-[1500px]">
-  <div
-
-    className="relative overflow-hidden rounded-xl bg-gradient-to-b from-[#8389DD]/25 to-transparent px-5 py-10 shadow-[3px_6px_5px_rgba(0,0,0,0.18)] sm:px-8 lg:px-12 lg:py-12"
-
-  >
-
-    <h2
-
-      className="mb-12 font-sans text-3xl font-bold text-[#1F2937] text-center lg:text-[32px]"
-
-    >
-
-      Frequently Asked <span className="text-[#38BDF8]">Questions</span>
-
-    </h2>
-
-    {/* FAQ Item 1 */}
-
-    <div className="collapse collapse-arrow mb-4 border-none bg-gradient-to-r from-[#203299] via-[#1E41B5] to-[#2B83E2] text-white rounded-lg shadow-sm">
-
-      <input type="radio" name="my-accordion-2" defaultChecked />
-
-      <div className="collapse-title text-base font-semibold text-white">
-
-        What does Proverb Technologies do?
-
-      </div>
-
-      <div className="collapse-content text-sm text-blue-100 opacity-90">
-
-        We build custom websites, web applications, mobile apps, CRM systems, ERP software, and provide digital marketing solutions to help businesses grow.
-
-      </div>
-
-    </div>
-
-    {/* FAQ Item 2 */}
-
-    <div className="collapse collapse-arrow mb-4 border-none bg-gradient-to-r from-[#203299] via-[#1E41B5] to-[#2B83E2] text-white rounded-lg shadow-sm">
-
-      <input type="radio" name="my-accordion-2" />
-
-      <div className="collapse-title text-base font-semibold text-white">
-
-        What does Proverb Technologies do?
-
-      </div>
-
-      <div className="collapse-content text-sm text-blue-100 opacity-90">
-
-        We build custom websites, web applications, mobile apps, CRM systems, ERP software, and provide digital marketing solutions to help businesses grow.
-
-      </div>
-
-    </div>
-
-    {/* FAQ Item 3 */}
-
-    <div className="collapse collapse-arrow mb-4 border-none bg-gradient-to-r from-[#203299] via-[#1E41B5] to-[#2B83E2] text-white rounded-lg shadow-sm">
-
-      <input type="radio" name="my-accordion-2" />
-
-      <div className="collapse-title text-base font-semibold text-white">
-
-        What does Proverb Technologies do?
-
-      </div>
-
-      <div className="collapse-content text-sm text-blue-100 opacity-90">
-
-        We build custom websites, web applications, mobile apps, CRM systems, ERP software, and provide digital marketing solutions to help businesses grow.
-
-      </div>
-
-    </div>
-
-    {/* FAQ Item 4 */}
-
-    <div className="collapse collapse-arrow mb-4 border-none bg-gradient-to-r from-[#203299] via-[#1E41B5] to-[#2B83E2] text-white rounded-lg shadow-sm">
-
-      <input type="radio" name="my-accordion-2" />
-
-      <div className="collapse-title text-base font-semibold text-white">
-
-        What does Proverb Technologies do?
-
-      </div>
-
-      <div className="collapse-content text-sm text-blue-100 opacity-90">
-
-        We build custom websites, web applications, mobile apps, CRM systems, ERP software, and provide digital marketing solutions to help businesses grow.
-
-      </div>
-
-    </div>
-
-    {/* FAQ Item 5 */}
-
-    <div className="collapse collapse-arrow mb-4 border-none bg-gradient-to-r from-[#203299] via-[#1E41B5] to-[#2B83E2] text-white rounded-lg shadow-sm">
-
-      <input type="radio" name="my-accordion-2" />
-
-      <div className="collapse-title text-base font-semibold text-white">
-
-        What does Proverb Technologies do?
-
-      </div>
-
-      <div className="collapse-content text-sm text-blue-100 opacity-90">
-
-        We build custom websites, web applications, mobile apps, CRM systems, ERP software, and provide digital marketing solutions to help businesses grow.
-
-      </div>
-
-    </div>
-
-    {/* FAQ Item 6 */}
-
-    <div className="collapse collapse-arrow mb-4 border-none bg-gradient-to-r from-[#203299] via-[#1E41B5] to-[#2B83E2] text-white rounded-lg shadow-sm">
-
-      <input type="radio" name="my-accordion-2" />
-
-      <div className="collapse-title text-base font-semibold text-white">
-
-        What does Proverb Technologies do?
-
-      </div>
-
-      <div className="collapse-content text-sm text-blue-100 opacity-90">
-
-        We build custom websites, web applications, mobile apps, CRM systems, ERP software, and provide digital marketing solutions to help businesses grow.
-
-      </div>
-
-    </div>
-
-  </div>
-
-  </div>
-</section>
+      <section
+        id="faq"
+        className="w-full px-6 py-14 md:px-10 lg:px-16 lg:py-16"
+      >
+        <div className="mx-auto w-full max-w-[1500px]">
+          <div className="relative overflow-hidden rounded-xl bg-gradient-to-b from-[#8389DD]/25 to-transparent px-5 py-10 shadow-[3px_6px_5px_rgba(0,0,0,0.18)] sm:px-8 lg:px-12 lg:py-12">
+            <h2 className="mb-12 font-sans text-3xl font-bold text-[#1F2937] text-center lg:text-[32px]">
+              Frequently Asked <span className="text-[#38BDF8]">Questions</span>
+            </h2>
+
+            {/* FAQ Item 1 */}
+
+            <div className="collapse collapse-arrow mb-4 border-none bg-gradient-to-r from-[#203299] via-[#1E41B5] to-[#2B83E2] text-white rounded-lg shadow-sm">
+              <input type="radio" name="my-accordion-2" defaultChecked />
+
+              <div className="collapse-title text-base font-semibold text-white">
+                What does Proverb Technologies do?
+              </div>
+
+              <div className="collapse-content text-sm text-blue-100 opacity-90">
+                We build custom websites, web applications, mobile apps, CRM
+                systems, ERP software, and provide digital marketing solutions
+                to help businesses grow.
+              </div>
+            </div>
+
+            {/* FAQ Item 2 */}
+
+            <div className="collapse collapse-arrow mb-4 border-none bg-gradient-to-r from-[#203299] via-[#1E41B5] to-[#2B83E2] text-white rounded-lg shadow-sm">
+              <input type="radio" name="my-accordion-2" />
+
+              <div className="collapse-title text-base font-semibold text-white">
+                What does Proverb Technologies do?
+              </div>
+
+              <div className="collapse-content text-sm text-blue-100 opacity-90">
+                We build custom websites, web applications, mobile apps, CRM
+                systems, ERP software, and provide digital marketing solutions
+                to help businesses grow.
+              </div>
+            </div>
+
+            {/* FAQ Item 3 */}
+
+            <div className="collapse collapse-arrow mb-4 border-none bg-gradient-to-r from-[#203299] via-[#1E41B5] to-[#2B83E2] text-white rounded-lg shadow-sm">
+              <input type="radio" name="my-accordion-2" />
+
+              <div className="collapse-title text-base font-semibold text-white">
+                What does Proverb Technologies do?
+              </div>
+
+              <div className="collapse-content text-sm text-blue-100 opacity-90">
+                We build custom websites, web applications, mobile apps, CRM
+                systems, ERP software, and provide digital marketing solutions
+                to help businesses grow.
+              </div>
+            </div>
+
+            {/* FAQ Item 4 */}
+
+            <div className="collapse collapse-arrow mb-4 border-none bg-gradient-to-r from-[#203299] via-[#1E41B5] to-[#2B83E2] text-white rounded-lg shadow-sm">
+              <input type="radio" name="my-accordion-2" />
+
+              <div className="collapse-title text-base font-semibold text-white">
+                What does Proverb Technologies do?
+              </div>
+
+              <div className="collapse-content text-sm text-blue-100 opacity-90">
+                We build custom websites, web applications, mobile apps, CRM
+                systems, ERP software, and provide digital marketing solutions
+                to help businesses grow.
+              </div>
+            </div>
+
+            {/* FAQ Item 5 */}
+
+            <div className="collapse collapse-arrow mb-4 border-none bg-gradient-to-r from-[#203299] via-[#1E41B5] to-[#2B83E2] text-white rounded-lg shadow-sm">
+              <input type="radio" name="my-accordion-2" />
+
+              <div className="collapse-title text-base font-semibold text-white">
+                What does Proverb Technologies do?
+              </div>
+
+              <div className="collapse-content text-sm text-blue-100 opacity-90">
+                We build custom websites, web applications, mobile apps, CRM
+                systems, ERP software, and provide digital marketing solutions
+                to help businesses grow.
+              </div>
+            </div>
+
+            {/* FAQ Item 6 */}
+
+            <div className="collapse collapse-arrow mb-4 border-none bg-gradient-to-r from-[#203299] via-[#1E41B5] to-[#2B83E2] text-white rounded-lg shadow-sm">
+              <input type="radio" name="my-accordion-2" />
+
+              <div className="collapse-title text-base font-semibold text-white">
+                What does Proverb Technologies do?
+              </div>
+
+              <div className="collapse-content text-sm text-blue-100 opacity-90">
+                We build custom websites, web applications, mobile apps, CRM
+                systems, ERP software, and provide digital marketing solutions
+                to help businesses grow.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section
-
         className="
 
     w-full
@@ -1085,11 +840,8 @@ export default function Page() {
     lg:py-16
 
   "
-
       >
-
         <div
-
           className="
 
       mx-auto
@@ -1123,11 +875,8 @@ export default function Page() {
       lg:py-16
 
     "
-
         >
-
           <h2
-
             className="
 
         font-jakarta
@@ -1145,15 +894,11 @@ export default function Page() {
         sm:leading-10
 
       "
-
           >
-
             Ready to get started?
-
           </h2>
 
           <p
-
             className="
 
         mt-4
@@ -1173,23 +918,15 @@ export default function Page() {
         sm:text-base
 
       "
-
           >
-
             Partner with Proverb Technologies to build scalable software, modern
-
             websites,
-
             <br className="hidden sm:block" />
-
             mobile applications, and digital solutions that drive business
-
             growth.
-
           </p>
 
           <button
-
             className="
 
         mt-6
@@ -1219,19 +956,11 @@ export default function Page() {
         hover:bg-white
 
       "
-
           >
-
             Get a Free Consultation
-
           </button>
-
         </div>
-
       </section>
-
     </main>
-
   );
-
 }
